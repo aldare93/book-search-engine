@@ -2,6 +2,7 @@
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
+const uri = process.env.MONGODB_URI;
 
 // import for schema
 const { typeDefs, resolvers } = require('./schemas');
